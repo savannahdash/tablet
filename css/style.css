@@ -1,0 +1,813 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+	font-size: 16pt;
+	font-family: 'Montserrat', serif;
+	background-image: url('../images/background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: 	#606060;
+  }
+
+header{
+	border-bottom: 3px solid white;
+	background-color: rgb(214, 213, 213);
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+
+  }
+
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+
+  a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
+
+
+.mylogo{
+	width: 94px;
+}
+
+#logo {
+	width: 100%;
+	margin: 10px;
+	display: inline;
+	border-top-left-radius: 78% 68%;
+    border-top-right-radius: 83% 72%;
+    border-bottom-right-radius: 76% 74%;
+    border-bottom-left-radius: 79% 65%;
+}
+
+nav{  
+	text-align: right; 	
+  }
+
+.links {
+	display: flex; 
+    justify-content: center;
+    flex-direction: row;
+}
+
+nav ul{
+	list-style-type: none;	
+  }
+
+nav li {
+	display: inline;
+	font-size: 16px;
+	margin: 10px;
+}
+
+nav ul li a{
+	color: rgb(60, 81, 90);
+}
+  
+nav ul li a:hover, nav ul li a:focus{
+	color: orange;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+nav ul li a:active{
+	background-color:rgb(235, 123, 123);
+}
+
+nav ul li a.current{
+	color: rgb(233, 98, 121);
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+
+
+p.one{
+	font-size: 30px;
+	margin: 20px;
+	position:relative;
+	top: 33px;
+	font-weight: 500;
+}
+
+
+.pantone {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#sky{
+	margin: 60px;
+	width: 380px;
+
+}
+
+#halo {
+	margin: 60px;
+	width: 380px;
+
+}
+
+#coral {
+	margin: 60px;
+	width: 380px;
+
+}
+
+#tomato{
+	margin: 70px;
+	width: 400px;
+
+}
+
+#blue{
+	margin: 30px;
+	width: 400px;
+
+}
+#cookie{
+	margin: 60px;
+	width: 410px;
+}
+
+#sprinkles{
+	margin: 80px;
+	width: 410px;
+}
+
+#japan{
+	margin: 80px;
+	width: 410px;
+}
+
+#music{
+	margin: 50px;
+	width: 438px;
+}
+
+@keyframes logo {
+    from {
+        width: 10px;
+        opacity: 0;
+    }
+    to {
+        width: 66px;
+        opacity: 1;
+    }
+}
+
+#logo {
+    animation-name: logo; 
+    animation-duration: 3s;
+    animation-iteration-count: 1; 
+
+}
+
+h1{
+	text-align: center;
+	padding: 10px;
+}
+
+
+#circle1{
+	width: 255px;
+}
+#circle2{
+	width: 280px;
+}
+#circle3{
+	width: 240px;
+}
+
+
+footer {
+	font-size: 20px;
+	width:100%;
+	text-align:center;
+	height: 20px;
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 10px;
+
+  }
+
+  /* Contact Page */
+
+  .contact {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: center;
+  }
+
+  input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	margin-right: 10px;
+  }
+
+  input[type=submit] {
+	background-color: black;
+	color: pink;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 10px;
+	font-weight: bold;
+  }
+  input[type=submit]:hover {
+	background-color: #80db86;
+  }
+
+  .container1 {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+  }
+  .touch{
+	font-size: 30px;
+    margin: 15px;
+    position: relative;
+    top: -5px;
+	font-weight: 500;
+	padding: 23px;
+}
+/* Playlist page */
+
+p.two{
+	font-size: 20px;
+	margin: 30px;
+	position:relative;
+	top: 10px;
+	font-weight: 300;
+	text-align: center;
+}
+.dontoliver {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#albums {
+	width: 300px;
+}
+
+
+#don1 {
+	margin: 10px;
+	width: 206px;
+}
+
+#don2 {
+	margin: 10px;
+	width: 200px;
+}
+#don3 {
+	margin: 10px;
+	width: 200px;
+}
+#don4 {
+	margin: 10px;
+	width: 200px;
+}
+
+.sza{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#ctrl{
+	width: 300px;
+}
+#drew{
+	margin: 10px;
+	width: 206px;
+	margin-top: 10px;
+}
+#doves{
+	margin: 10px;
+	width: 206px;
+}
+#garden{
+	margin: 10px;
+	width: 206px;
+}
+#weekend{
+	margin: 10px;
+	width: 206px;
+}
+.brent{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#brent{
+	width: 300px;
+}
+#money{
+	margin: 10px;
+	width: 206px;
+	margin-top: 10px;
+}
+#bluffin{
+	margin: 10px;
+	width: 206px;
+	margin-top: 10px;
+}
+#clouded{
+	margin: 10px;
+	width: 206px;
+	margin-top: 10px;
+}
+#beenaway{
+	margin: 10px;
+	width: 206px;
+	margin-top: 10px;
+}
+.macmiller{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#swimming{
+	width: 300px;
+}
+#small{
+	margin: 10px;
+	width: 206px;
+	margin-top: 10px;
+}
+#use{
+	margin: 10px;
+	width: 206px;
+	margin-top: 10px;
+}
+#jet{
+	margin: 10px;
+	width: 206px;
+	margin-top: 10px;
+}
+#feelings{
+	margin: 10px;
+	width: 206px;
+	margin-top: 10px;
+}
+
+.biod{
+	text-align: center;
+	padding: 30px;
+    text-indent: 50px;
+    font-size: 19px;
+}
+
+.s_bio{
+	text-align: center;
+	padding: 30px;
+    text-indent: 50px;
+    font-size: 19px;
+}
+.b_bio{
+	text-align: center;
+	padding: 30px;
+    text-indent: 50px;
+    font-size: 19px;
+}
+
+.m_bio{
+	text-align: center;
+	padding: 30px;
+    text-indent: 50px;
+    font-size: 19px;
+}
+
+
+/* Gallery */
+
+p.shop {
+	font-size: 32px;
+	position:relative;
+	margin: 32px;
+	font-weight: 500;
+}
+.shopping{
+  display: grid;
+  grid-template-rows: repeat (6, auto);
+  grid-template-columns: repeat(3, auto);
+  grid-auto-flow: row;
+  grid-row-gap: 120px;
+  justify-content: space-evenly;
+}
+
+#japanblack{
+	max-height: 400px; 
+	overflow: hidden;
+	width: 100%;
+
+}
+
+#japanwooden{
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#japanwhite {
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#coralblack {
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#coralwood{
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+
+}
+
+#coralwhite {
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#haloblack{
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#halowooden{
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#halowhite{
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#cloudsblack {
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#cloudswood{
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#cloudswhite{
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+#nb{
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+#noteswood{
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+#noteswhite{
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+#sprinklesb{
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+#sprinkleswood{
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+#sprinkleswhite{
+	max-height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+.pantonep1{
+	padding: 30px;
+	text-align: center;
+	text-indent: 50px;
+	font-size: 19px;
+}
+.pantonep2{
+	padding: 20px;
+	text-align: center;
+	text-indent: 50px;
+	font-size: 19px;
+}
+.pantonep3{
+	padding: 20px;
+	text-align: center;
+	text-indent: 50px;
+	font-size: 19px;
+}
+
+
+/* Home Page */
+
+p.name{
+	font-size: 32px;
+	font-weight: 450;
+	text-align: center;
+	margin: 11px;
+}
+.maininfo{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#me {
+	width: 270px;
+	padding: 20px;
+	margin-bottom: -31px;
+	border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.lessinfo{
+	text-align:center;
+}
+
+h2{
+	font-weight: 600;
+	font-size: 40px;
+	margin: 14px;
+	padding: 10px;
+}
+p.hello {
+	font-size: 32px;
+	font-weight: 300;
+	margin-top: -10px;
+
+}
+
+.p1home {
+	padding: 30px;
+	text-align: left;
+	text-indent: 50px;
+	font-size: 19px;
+
+}
+
+.p2home{
+	padding: 30px;
+	text-align: left;
+	text-indent: 50px;
+	font-size: 19px;
+	margin-top: -29px;
+}
+
+.p3home{
+	padding: 30px;
+	text-align: left;
+	text-indent: 50px;
+	font-size: 19px;
+	margin-top: -29px;
+}
+.gallery{
+	color:blue;
+}
+.playlist{
+	color:blue;
+}
+.contact{
+	color:blue;
+}
+.gallery:hover{
+	color: rgb(226, 145, 159);
+	text-decoration: none;
+	font-weight: bold;
+}
+.playlist:hover{
+	color: rgb(226, 145, 159);
+	text-decoration: none;
+	font-weight: bold;
+}
+.contact:hover{
+	color: rgb(226, 145, 159);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 850px){
+	header{
+		flex-direction: row;
+	}
+	nav{
+        width: 100%;
+	}
+	.links{
+        flex-direction: row;
+		width:100%;
+		justify-content: flex-end;
+	}
+	.mylogo{
+		width: 66px;
+	}
+	p.shop {
+		text-align:center
+	}
+	p.one{
+		text-align: center;
+	}
+
+	p.name{
+		text-align:left;
+		margin: 45px;
+		font-size: 39px;
+		position: sticky;
+		z-index: 2;
+	}
+
+	.maininfo{
+		flex-direction: row;
+	}
+	
+	#me {
+		margin: 32px;
+		width: 379px;
+		position:sticky;
+		align-self: flex-start;
+		margin-top: -34px;
+	}
+	.less-info {
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	h2{
+		font-size: 74px;
+		margin-left: 31px;
+		margin-top: 71px;
+	}
+
+	p.hello {
+		margin-left: 31px;
+		font-size: 47px;
+		margin-top: 6px;
+	}
+
+	#circle1{
+		margin-left: -9px;
+		width: 158px;
+		padding:13px;
+	}
+	#circle2{
+		width:165px;
+		margin-left: -41px;
+		padding: 16px;
+		margin-right: -30px;
+		margin-top: 11px;
+	}
+	#circle3{
+		width:144px;
+		padding: 18px;
+	}
+
+	.p1home {
+		position:relative;
+		right: 500px;
+		bottom: 374px;
+		padding: 2px;
+		padding-left: 30px;
+	}
+
+	.p2home{
+		position:relative;
+		right: 500px;
+		bottom: 322px;
+		padding: 2px;
+		padding-left: 30px;
+
+	}
+	.p3home{
+		position:relative;
+		right: 500px;
+		bottom: 264px;
+		padding: 2px;
+		padding-left: 30px;
+	}
+	#sky{
+		width: 300px;
+	}
+	#halo{
+		width:300px;
+	}
+	#coral{
+		width: 300px;
+	}
+	#blue{
+		width: 300px;
+	}
+	#tomato{
+		width: 300px;
+	}
+	#cookie{
+		width: 300px;
+	}
+	#sprinkles{
+		width: 350px;
+	}
+	#japan{
+		width: 300px;
+	}
+	#music{
+		width: 300px;
+	}
+	.pantonep1{
+		text-align:left;
+	}
+	.pantonep2{
+		text-align:left;
+	}
+	.pantonep3{
+		text-align:left;
+	}
+
+
+
+	.dontoliver{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#albums{
+		margin-left: 10px;
+	}
+	.sza{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#ctrl{
+		margin-left: 10px;
+	}
+	.brent{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#brent{
+		margin-left: 10px;
+	}
+	.macmiller{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#swimming{
+		margin-left: 10px;
+	}
+
+	.touch{
+		text-align: center;
+	}
+
+}
